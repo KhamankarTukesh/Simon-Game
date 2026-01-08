@@ -21,6 +21,7 @@ body {
     border-radius: 20%;
     border: 8px solid black;
     cursor: pointer;
+    margin-top: 2px;
     transition: transform 0.15s ease, background-color 0.2s ease;
 }
 
