@@ -1,32 +1,65 @@
-body{
+/* General */
+body {
     text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
 }
-.btn{
+
+/* Container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* important for mobile */
+    gap: 1rem;
+}
+
+/* Buttons */
+.btn {
     height: 200px;
     width: 200px;
     border-radius: 20%;
-    border: 10px solid black;
-    margin: 2.5rem;
+    border: 8px solid black;
+    cursor: pointer;
+    transition: transform 0.15s ease, background-color 0.2s ease;
 }
-.btn-container{
-    display: flex;
-    justify-content: center;
+
+/* Tap effect */
+.btn:active {
+    transform: scale(0.95);
 }
-.yellow{
-    background-color: #f99b45;
-}
-.red{
-    background-color:#d95980;
-}
-.green{
-    background-color: #63aac0;
-}
-.purple{
-    background-color: #819ff9;
-}
-.flash{
+
+/* Colors */
+.yellow { background-color: #f99b45; }
+.red    { background-color: #d95980; }
+.green  { background-color: #63aac0; }
+.purple { background-color: #819ff9; }
+
+.flash {
     background-color: white;
 }
-.userFlash{
+
+.userFlash {
     background-color: green;
+}
+
+/* 🔥 Mobile responsiveness */
+@media (max-width: 768px) {
+    .btn {
+        height: 140px;
+        width: 140px;
+        border-width: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        height: 110px;
+        width: 110px;
+        border-width: 5px;
+    }
+
+    body {
+        padding: 0.5rem;
+    }
 }
