@@ -2,28 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Game</title>
-    <link rel="stylesheet" href="simon.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Simon Says Game</h1>
-<h2>Click Start to play</h2>
+    <h2>Press Start Button</h2>
+    <button id="startBtn">Start Game</button>
 
-<button id="startBtn">START GAME</button>
-
-<div class="btn-container">
-    <div>
-        <button class="btn red" id="red">1</button>
-        <button class="btn yellow" id="yellow">2</button>
+    <div class="container">
+        <div class="btn red" id="red"></div>
+        <div class="btn yellow" id="yellow"></div>
+        <div class="btn green" id="green"></div>
+        <div class="btn purple" id="purple"></div>
     </div>
-    <div>
-        <button class="btn green" id="green">3</button>
-        <button class="btn purple" id="purple">4</button>
-    </div>
-</div>
 
-<script src="simon.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
