@@ -9,7 +9,7 @@ let startBtn = document.querySelector("#startBtn");
 let btns = ["yellow","red","purple","green"];
 
 startBtn.addEventListener("pointerdown", function () {
-    if (started === false) {
+    if (started == false) {
         started = true;
         levelUp();
     }
@@ -17,12 +17,16 @@ startBtn.addEventListener("pointerdown", function () {
 
 function gameFlash(btn) {
     btn.classList.add("flash");
-    setTimeout(() => btn.classList.remove("flash"), 250);
+    setTimeout(function () {
+        btn.classList.remove("flash");
+    }, 250);
 }
 
 function userFlash(btn) {
     btn.classList.add("userFlash");
-    setTimeout(() => btn.classList.remove("userFlash"), 250);
+    setTimeout(function () {
+        btn.classList.remove("userFlash");
+    }, 250);
 }
 
 function levelUp() {
@@ -40,11 +44,11 @@ function levelUp() {
 
 function checkAns(idx) {
     if (userseq[idx] === gameSeq[idx]) {
-        if (userseq.length === gameSeq.length) {
+        if (userseq.length == gameSeq.length) {
             setTimeout(levelUp, 1000);
         }
     } else {
-        h2.innerHTML = `Game Over! Score: <b>${level}</b>`;
+        h2.innerHTML = `Game Over! Your score was <b>${level}</b>`;
         reset();
     }
 }
