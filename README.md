@@ -78,9 +78,6 @@ This project is ideal for demonstrating **JavaScript logic**, **event handling**
 
 ---
 
-## 📸 Screenshot (Optional)
-
-*Add a screenshot or GIF of the game here*
 
 ---
 
@@ -100,6 +97,7 @@ Feedback and improvements are always welcome!
 
 Happy Coding! 🎯🔥
 ﻿# Simon-Game
+
 
 
 
