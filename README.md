@@ -1,11 +1,12 @@
 # 🎮 Simon Game – Mini Project
 
 🔗 **Live Demo:**
-[https://simon-game.vercel.app](https://simon-game.vercel.app) *(replace with your actual deployed URL if different)*
+🌐 [Visit Website](https://simon-game-alpha-steel.vercel.app)
 
 ---
 
-simon-game-alpha-steel.vercel.app
+
+
 ## 📌 Project Overview
 
 **Simon Game** is a classic memory-based game built using **HTML, CSS, and JavaScript**. The game tests the player’s ability to remember and repeat an increasing sequence of colors. With each level, the sequence grows, making the game more challenging and engaging.
@@ -99,5 +100,6 @@ Feedback and improvements are always welcome!
 
 Happy Coding! 🎯🔥
 ﻿# Simon-Game
+
 
 
